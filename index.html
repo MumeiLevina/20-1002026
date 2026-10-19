@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6dde2">
+  <meta name="description" content="Món quà 20/10 dành tặng mẹ, bà nội và bà ngoại.">
+  <title>Gửi những người phụ nữ con yêu thương</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Dancing+Script:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đi đến nội dung chính</a>
+
+  <div class="site-texture" aria-hidden="true"></div>
+  <div class="petal-field petal-field--ambient" aria-hidden="true">
+    <i style="--x:8%;--delay:-2s;--duration:18s;--drift:44px;--size:12px"></i>
+    <i style="--x:24%;--delay:-11s;--duration:22s;--drift:-38px;--size:9px"></i>
+    <i style="--x:71%;--delay:-6s;--duration:20s;--drift:54px;--size:11px"></i>
+    <i style="--x:91%;--delay:-15s;--duration:24s;--drift:-42px;--size:8px"></i>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Về màn hình chọn thiệp">
+      <span class="brand__mark" aria-hidden="true">20</span>
+      <span>tháng mười</span>
+    </a>
+    <button class="sound-button" id="soundToggle" type="button" aria-pressed="false" aria-label="Bật nhạc nền">
+      <span class="sound-button__icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="sound-button__label">Bật nhạc</span>
+    </button>
+  </header>
+
+  <main id="main-content">
+    <section class="welcome" id="welcome" aria-labelledby="welcomeTitle">
+      <div class="welcome__copy">
+        <p class="date-stamp">Ngày Phụ nữ Việt Nam</p>
+        <h1 id="welcomeTitle">Gửi những người phụ nữ<br><em>con yêu thương</em></h1>
+        <p class="welcome__subtitle">Một món quà nhỏ, chứa đựng thật nhiều yêu thương. <strong>20.10</strong></p>
+      </div>
+
+      <div class="envelope-choices" aria-label="Chọn một tấm thiệp để mở">
+        <button class="envelope-card envelope-card--mom" type="button" data-card="mom" aria-label="Mở thiệp gửi mẹ">
+          <span class="envelope-card__paper" aria-hidden="true"></span>
+          <span class="envelope-card__flap" aria-hidden="true"></span>
+          <span class="envelope-card__face">
+            <span class="wax-seal" aria-hidden="true">M</span>
+            <span class="envelope-card__to">Gửi mẹ yêu</span>
+            <span class="envelope-card__hint">Chạm để mở thư</span>
+          </span>
+        </button>
+
+        <button class="envelope-card envelope-card--paternal" type="button" data-card="paternalGrandma" aria-label="Mở thiệp gửi bà nội">
+          <span class="envelope-card__paper" aria-hidden="true"></span>
+          <span class="envelope-card__flap" aria-hidden="true"></span>
+          <span class="envelope-card__face">
+            <span class="wax-seal" aria-hidden="true">N</span>
+            <span class="envelope-card__to">Gửi bà nội</span>
+            <span class="envelope-card__hint">Chạm để mở thư</span>
+          </span>
+        </button>
+
+        <button class="envelope-card envelope-card--maternal" type="button" data-card="maternalGrandma" aria-label="Mở thiệp gửi bà ngoại">
+          <span class="envelope-card__paper" aria-hidden="true"></span>
+          <span class="envelope-card__flap" aria-hidden="true"></span>
+          <span class="envelope-card__face">
+            <span class="wax-seal" aria-hidden="true">O</span>
+            <span class="envelope-card__to">Gửi bà ngoại</span>
+            <span class="envelope-card__hint">Chạm để mở thư</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="opening-scene" id="openingScene" aria-hidden="true">
+      <div class="opening-envelope" aria-hidden="true">
+        <div class="opening-envelope__back"></div>
+        <div class="opening-envelope__letter">
+          <span>20.10</span>
+        </div>
+        <div class="opening-envelope__front"></div>
+        <div class="opening-envelope__flap"></div>
+        <div class="opening-envelope__seal">♥</div>
+      </div>
+      <p class="opening-scene__note">Một lá thư nhỏ đang được mở...</p>
+    </section>
+
+    <section class="card-view card-view--mom" id="momCard" data-card-view="mom" aria-hidden="true" aria-labelledby="momTitle">
+      <div class="card-backdrop" data-bg="mom"></div>
+      <div class="letter-shell">
+        <div class="letter-tools" aria-label="Điều khiển thiệp">
+          <button type="button" class="tool-button" data-action="close"><span aria-hidden="true">←</span> Đóng thư</button>
+          <button type="button" class="tool-button" data-action="replay"><span aria-hidden="true">↻</span> Đọc lại</button>
+        </div>
+
+        <article class="mom-letter">
+          <div class="pressed-flower pressed-flower--rose" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+          <div class="photo-frame photo-frame--oval reveal-item" style="--order:1">
+            <div class="photo-placeholder" data-placeholder="mom"><span>Mẹ</span></div>
+            <img data-avatar="mom" alt="Ảnh của mẹ">
+          </div>
+          <div class="letter-date reveal-item" style="--order:2">20 tháng 10</div>
+          <div class="mom-letter__content">
+            <p class="letter-kicker reveal-item" style="--order:3">Dành riêng cho mẹ</p>
+            <h2 class="reveal-item" id="momTitle" style="--order:4">Gửi mẹ yêu của con</h2>
+            <div class="letter-rule reveal-item" style="--order:5" aria-hidden="true"><span>♥</span></div>
+            <p class="letter-paragraph reveal-item" style="--order:6">Nhân ngày 20/10, con muốn dành một chút thời gian để nói với mẹ những điều mà bình thường con vẫn hay ngại nói.</p>
+            <p class="letter-paragraph reveal-item" style="--order:7">Cảm ơn mẹ vì đã luôn yêu thương, lo lắng và dành cho con những điều tốt đẹp nhất. Có những lúc con chưa thật sự hiểu hết những vất vả của mẹ, có những khi con còn vô tâm, nhưng con luôn biết mình may mắn vì được làm con của mẹ.</p>
+            <p class="letter-paragraph reveal-item" style="--order:8">Con mong mẹ sẽ luôn mạnh khỏe, bình an, có thật nhiều niềm vui và dành nhiều thời gian hơn để chăm sóc cho chính mình. Con sẽ cố gắng trưởng thành hơn từng ngày để mẹ có thể yên tâm và tự hào.</p>
+            <p class="letter-wish reveal-item" style="--order:9">Chúc mẹ ngày 20/10 thật hạnh phúc. Con yêu mẹ rất nhiều!</p>
+            <p class="signature reveal-item" style="--order:10">Con của mẹ.</p>
+            <div class="beating-heart reveal-item" style="--order:11" aria-label="Yêu mẹ">♥</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card-view card-view--grandma card-view--paternal" id="paternalGrandmaCard" data-card-view="paternalGrandma" aria-hidden="true" aria-labelledby="paternalGrandmaTitle">
+      <div class="card-backdrop" data-bg="paternalGrandma"></div>
+      <div class="letter-shell grandma-shell">
+        <div class="letter-tools" aria-label="Điều khiển thiệp">
+          <button type="button" class="tool-button" data-action="close"><span aria-hidden="true">←</span> Đóng thư</button>
+          <button type="button" class="tool-button" data-action="replay"><span aria-hidden="true">↻</span> Đọc lại</button>
+        </div>
+
+        <article class="grandma-letter">
+          <div class="grandma-letter__visual reveal-item" style="--order:1">
+            <span class="paper-tape" aria-hidden="true"></span>
+            <div class="photo-frame photo-frame--polaroid">
+              <div class="photo-placeholder" data-placeholder="paternalGrandma"><span>Bà nội</span></div>
+              <img data-avatar="paternalGrandma" alt="Ảnh bà nội">
+            </div>
+            <p class="grandma-letter__quote">“Những yêu thương của bà luôn là ký ức ấm áp trong lòng cháu.”</p>
+          </div>
+
+          <div class="grandma-letter__content">
+            <p class="letter-kicker reveal-item" style="--order:2">Lá thư dành riêng cho bà</p>
+            <h2 class="reveal-item" id="paternalGrandmaTitle" style="--order:3">Gửi bà nội kính yêu</h2>
+            <div class="letter-rule reveal-item" style="--order:4" aria-hidden="true"><span>♥</span></div>
+            <p class="letter-paragraph reveal-item" style="--order:5"><strong>Gửi bà nội kính yêu của cháu,</strong></p>
+            <p class="letter-paragraph reveal-item" style="--order:6">Nhân ngày 20/10, cháu muốn gửi đến bà những lời chúc yêu thương và chân thành nhất.</p>
+            <p class="letter-paragraph reveal-item" style="--order:7">Cháu cảm ơn bà vì đã luôn yêu thương, quan tâm và dành cho cháu thật nhiều tình cảm ấm áp. Những điều giản dị bà dành cho cháu luôn là những ký ức rất đẹp và quý giá trong lòng cháu.</p>
+            <p class="letter-paragraph reveal-item" style="--order:8">Cháu mong bà luôn mạnh khỏe, vui vẻ, sống thật lâu và luôn có nhiều niềm vui bên gia đình, con cháu. Cháu chỉ mong bà lúc nào cũng bình an và hạnh phúc.</p>
+            <p class="letter-wish reveal-item" style="--order:9">Chúc bà nội ngày 20/10 thật ấm áp, nhiều sức khỏe và thật nhiều niềm vui.</p>
+            <p class="signature reveal-item" style="--order:10">Đứa cháu yêu bà.</p>
+            <div class="beating-heart reveal-item" style="--order:11" aria-label="Yêu bà nội">♥</div>
+          </div>
+          <div class="pressed-flower pressed-flower--daisy" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><b></b></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card-view card-view--grandma card-view--maternal" id="maternalGrandmaCard" data-card-view="maternalGrandma" aria-hidden="true" aria-labelledby="maternalGrandmaTitle">
+      <div class="card-backdrop" data-bg="maternalGrandma"></div>
+      <div class="letter-shell grandma-shell">
+        <div class="letter-tools" aria-label="Điều khiển thiệp">
+          <button type="button" class="tool-button" data-action="close"><span aria-hidden="true">←</span> Đóng thư</button>
+          <button type="button" class="tool-button" data-action="replay"><span aria-hidden="true">↻</span> Đọc lại</button>
+        </div>
+
+        <article class="grandma-letter">
+          <div class="grandma-letter__visual reveal-item" style="--order:1">
+            <span class="paper-tape paper-tape--rose" aria-hidden="true"></span>
+            <div class="photo-frame photo-frame--polaroid photo-frame--tilted">
+              <div class="photo-placeholder" data-placeholder="maternalGrandma"><span>Bà ngoại</span></div>
+              <img data-avatar="maternalGrandma" alt="Ảnh bà ngoại">
+            </div>
+            <p class="grandma-letter__quote">“Sự dịu dàng của bà luôn là điều cháu trân trọng mãi.”</p>
+          </div>
+
+          <div class="grandma-letter__content">
+            <p class="letter-kicker reveal-item" style="--order:2">Lá thư dành riêng cho bà</p>
+            <h2 class="reveal-item" id="maternalGrandmaTitle" style="--order:3">Gửi bà ngoại kính yêu</h2>
+            <div class="letter-rule reveal-item" style="--order:4" aria-hidden="true"><span>♥</span></div>
+            <p class="letter-paragraph reveal-item" style="--order:5"><strong>Gửi bà ngoại kính yêu của cháu,</strong></p>
+            <p class="letter-paragraph reveal-item" style="--order:6">Nhân ngày 20/10, cháu muốn gửi đến bà những lời chúc tốt đẹp và yêu thương nhất.</p>
+            <p class="letter-paragraph reveal-item" style="--order:7">Cháu cảm ơn bà vì sự dịu dàng, quan tâm và những lời hỏi han ấm áp mà bà luôn dành cho cháu. Với cháu, bà là một người rất đáng kính và luôn mang đến cảm giác thân thương, gần gũi.</p>
+            <p class="letter-paragraph reveal-item" style="--order:8">Cháu mong bà luôn khỏe mạnh, bình an, sống vui vẻ và có thật nhiều niềm hạnh phúc mỗi ngày. Cháu hy vọng sẽ còn thật nhiều thời gian để ở bên bà và lưu giữ thêm nhiều kỷ niệm đẹp.</p>
+            <p class="letter-wish reveal-item" style="--order:9">Chúc bà ngoại ngày 20/10 thật hạnh phúc, mạnh khỏe và luôn rạng rỡ bên gia đình.</p>
+            <p class="signature reveal-item" style="--order:10">Đứa cháu yêu bà.</p>
+            <div class="beating-heart reveal-item" style="--order:11" aria-label="Yêu bà ngoại">♥</div>
+          </div>
+          <div class="pressed-flower pressed-flower--rose grandma-letter__rose" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="petal-field petal-field--celebration" id="celebrationPetals" aria-hidden="true"></div>
+  <div class="screen-reader-status" id="statusMessage" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
